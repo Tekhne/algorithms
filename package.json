@@ -1,0 +1,12 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "algorithms",
+  "scripts": {
+    "test": "mocha -b -R spec"
+  },
+  "author": "Peter Havens",
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
