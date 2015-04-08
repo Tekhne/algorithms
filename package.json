@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "algorithms",
   "scripts": {
-    "test": "mocha -b -R spec"
+    "lint": "./node_modules/.bin/jshint lib test",
+    "test": "./node_modules/.bin/mocha -b -R spec --recursive test"
   },
   "author": "Peter Havens",
   "devDependencies": {
+    "jshint": "^2.6.3",
     "mocha": "^2.2.1"
   }
 }
