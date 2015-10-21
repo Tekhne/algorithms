@@ -10,5 +10,8 @@
   "devDependencies": {
     "jshint": "^2.6.3",
     "mocha": "^2.2.1"
+  },
+  "dependencies": {
+    "shuffle-array": "^0.1.0"
   }
 }
