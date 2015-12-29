@@ -1,5 +1,5 @@
 var assert = require('assert');
-var permute = require('../../lib/permute/in_place');
+var permute = require('../../lib/permute/by_swapping');
 
 describe('permute()', function () {
   it('permutes the given array by randomized swapping', function () {
