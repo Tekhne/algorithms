@@ -38,3 +38,20 @@ describe('heapExtractMaximum()', function () {
     assert.deepEqual(actual, expected);
   });
 });
+
+describe('heapIncreaseKey()', function () {
+  it('throws an error when new key is smaller than current key', function () {
+    var array = [16, 14, 10];
+    array.heapSize = array.length;
+    assert.throws(function () { pq.heapIncreaseKey(array, 1, 5) }, Error);
+  });
+
+  it('sets element at given index to given key and enforces max-heap property on it', function () {
+    var actual = [16, 14, 10, 8, 7, 9, 3, 2, 4, 1];
+    var expected = [17, 16, 10, 8, 14, 9, 3, 2, 4, 7];
+    actual.heapSize = actual.length;
+    expected.heapSize = expected.length;
+    pq.heapIncreaseKey(actual, 9, 17);
+    assert.deepEqual(actual, expected);
+  });
+});
