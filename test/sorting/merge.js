@@ -1,10 +1,12 @@
-var assert = require('assert');
-var sort = require('../../lib/sorting/merge');
+'use strict';
 
-describe('sort()', function () {
-  it('sorts the given array using merge sort', function () {
-    var actual = [9, 2, 8, 3, 7, 4, 5, 6, 1, 0];
-    var expected = actual.slice();
+const assert = require('assert');
+const sort = require('../../lib/sorting/merge');
+
+describe('sort()', () => {
+  it('sorts the given array using merge sort', () => {
+    const actual = [9, 2, 8, 3, 7, 4, 5, 6, 1, 0];
+    const expected = actual.slice();
     assert.deepEqual(sort(actual), expected.sort());
   });
 });
