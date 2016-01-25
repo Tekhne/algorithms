@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const sort = require('../../lib/sorting/merge');
+const sort = require('../lib/sort_merge');
 
 describe('sort()', () => {
   it('sorts the given array using merge sort', () => {
