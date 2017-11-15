@@ -16,6 +16,6 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=8.4.0"
+    "node": ">=8.9.1"
   }
 }
