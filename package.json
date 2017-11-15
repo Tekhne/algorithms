@@ -15,10 +15,7 @@
   },
   "private": true,
   "license": "UNLICENSED",
-  {
-    "engines":
-    {
-      "node": ">=8.4.0"
-    }
+  "engines": {
+    "node": ">=8.4.0"
   }
 }
