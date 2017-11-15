@@ -53,8 +53,10 @@ describe('stack', () => {
     describe('when stack is empty', () => {
       it('throws an exception', () => {
         const s = [];
-        s.top = -1;;
-        assert.throws(() => { stack.pop(s) });
+        s.top = -1;
+        assert.throws(() => {
+          stack.pop(s);
+        });
       });
     });
   });

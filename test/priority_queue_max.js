@@ -14,7 +14,9 @@ describe('heapExtractMaximum()', () => {
   it('throws an error when heap size is < 1', () => {
     const array = [];
     array.heapSize = 0;
-    assert.throws(() => { pq.heapExtractMaximum(array) }, Error);
+    assert.throws(() => {
+      pq.heapExtractMaximum(array);
+    }, Error);
   });
 
   it('returns the maximum element in the priority queue', () => {
@@ -45,16 +47,17 @@ describe('heapIncreaseKey()', () => {
   it('throws an error when new key is smaller than current key', () => {
     const array = [16, 14, 10];
     array.heapSize = array.length;
-    assert.throws(() => { pq.heapIncreaseKey(array, 1, 5) }, Error);
+    assert.throws(() => {
+      pq.heapIncreaseKey(array, 1, 5);
+    }, Error);
   });
 
   it('sets given index to given key and enforces max-heap property on it', () => {
-      const actual = [16, 14, 10, 8, 7, 9, 3, 2, 4, 1];
-      const expected = [17, 16, 10, 8, 14, 9, 3, 2, 4, 7];
-      actual.heapSize = actual.length;
-      expected.heapSize = expected.length;
-      pq.heapIncreaseKey(actual, 9, 17);
-      assert.deepEqual(actual, expected);
-    }
-  );
+    const actual = [16, 14, 10, 8, 7, 9, 3, 2, 4, 1];
+    const expected = [17, 16, 10, 8, 14, 9, 3, 2, 4, 7];
+    actual.heapSize = actual.length;
+    expected.heapSize = expected.length;
+    pq.heapIncreaseKey(actual, 9, 17);
+    assert.deepEqual(actual, expected);
+  });
 });

@@ -9,8 +9,8 @@ describe('direct address table', () => {
   let table;
 
   beforeEach(() => {
-    object1 = {key: 0, data: 'data'};
-    object2 = {key: 9, data: 'data'};
+    object1 = { key: 0, data: 'data' };
+    object2 = { key: 9, data: 'data' };
     table = [];
     table[object1.key] = object1;
   });

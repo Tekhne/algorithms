@@ -10,12 +10,12 @@ describe('doubly linked list', () => {
   let node3;
 
   beforeEach(() => {
-      node1 = new dll.Node(1, null, null);
-      node2 = new dll.Node(2, null, null);
-      node3 = new dll.Node(3, null, null);
-      list = new dll.DoublyLinkedList(node3);
-      list.insert(node2); // Put at front of list.
-      list.insert(node1); // Put at front of list.
+    node1 = new dll.Node(1, null, null);
+    node2 = new dll.Node(2, null, null);
+    node3 = new dll.Node(3, null, null);
+    list = new dll.DoublyLinkedList(node3);
+    list.insert(node2); // Put at front of list.
+    list.insert(node1); // Put at front of list.
   });
 
   describe('search()', () => {
