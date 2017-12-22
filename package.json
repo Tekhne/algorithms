@@ -11,6 +11,7 @@
     "mocha": "^4.0.1"
   },
   "dependencies": {
+    "big-integer": "^1.6.26",
     "lodash": "^4.17.4",
     "shuffle-array": "^1.0.1"
   },
