@@ -7,7 +7,9 @@ const { HashTable, MAX_CAPACITY } = require('../lib/hash_table');
 describe('HashTable', () => {
   describe('constructor()', () => {
     it('throws an error when given capacity is > MAX_CAPACITY', () => {
-      assert.throws(() => { new HashTable(MAX_CAPACITY + 1)});
+      assert.throws(() => {
+        new HashTable(MAX_CAPACITY + 1);
+      });
     });
   });
 
@@ -18,7 +20,7 @@ describe('HashTable', () => {
         const key = { hashCode: () => code };
         const capacity = 12345;
         const table = new HashTable(capacity);
-        assert.strictEqual(table.hash(key), code % capacity)
+        assert.strictEqual(table.hash(key), code % capacity);
       });
     });
 
@@ -42,7 +44,9 @@ describe('HashTable', () => {
 
     describe('when key is not given', () => {
       it('throws an error', () => {
-        assert.throws(() => { table.access() });
+        assert.throws(() => {
+          table.access();
+        });
       });
     });
 
@@ -67,8 +71,8 @@ describe('HashTable', () => {
       describe('when table does not have key', () => {
         describe('when value is given', () => {
           it('adds new key/value pair to table', () => {
-            table.access(key, value)
-            assert.strictEqual(value, table.access(key))
+            table.access(key, value);
+            assert.strictEqual(value, table.access(key));
           });
         });
 
@@ -90,7 +94,9 @@ describe('HashTable', () => {
 
     describe('when capacity is > MAX_CAPACITY', () => {
       it('throws an error', () => {
-        assert.throws(() => { table.resize(MAX_CAPACITY + 1) });
+        assert.throws(() => {
+          table.resize(MAX_CAPACITY + 1);
+        });
       });
     });
 
@@ -101,8 +107,8 @@ describe('HashTable', () => {
     });
 
     it('retains table key/value pairs', () => {
-      const key1  = 'testkey1';
-      const key2  = 'testkey2';
+      const key1 = 'testkey1';
+      const key2 = 'testkey2';
       const value1 = 'testvalue1';
       const value2 = 'testvalue2';
       table.access(key1, value1);
@@ -142,7 +148,9 @@ describe('HashTable', () => {
     describe('when key is not given', () => {
       it('throws an error', () => {
         const table = new HashTable();
-        assert.throws(() => { table.delete() });
+        assert.throws(() => {
+          table.delete();
+        });
       });
     });
 
@@ -170,9 +178,9 @@ describe('HashTable', () => {
 
     // FIXME find colliding keys to enable "runs."
     // describe('when keys inside table have colliding hashes', () => {
-      // it('ensures other, colliding key/value pairs are still accessible', () => {
-        // ...
-      // });
+    // it('ensures other, colliding key/value pairs are still accessible', () => {
+    // ...
+    // });
     // });
 
     it('reduces table size by one', () => {
