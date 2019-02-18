@@ -8,12 +8,12 @@
   },
   "author": "Peter Havens",
   "devDependencies": {
-    "mocha": "^4.0.1",
-    "prettier": "^1.10.2"
+    "mocha": "^6.0.0",
+    "prettier": "^1.16.4"
   },
   "dependencies": {
-    "big-integer": "^1.6.26",
-    "lodash": "^4.17.4",
+    "big-integer": "^1.6.41",
+    "lodash": "^4.17.11",
     "shuffle-array": "^1.0.1"
   },
   "private": true,
