@@ -8,11 +8,11 @@
   },
   "author": "Peter Havens",
   "devDependencies": {
-    "mocha": "^6.0.0",
+    "mocha": "^6.0.2",
     "prettier": "^1.16.4"
   },
   "dependencies": {
-    "big-integer": "^1.6.41",
+    "big-integer": "^1.6.42",
     "lodash": "^4.17.11",
     "shuffle-array": "^1.0.1"
   },
