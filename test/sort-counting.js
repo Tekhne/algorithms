@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const sort = require('../lib/sort_counting');
+const sort = require('../lib/sort-counting');
 
 describe('sort()', () => {
   it('sorts the given array using counting sort', () => {

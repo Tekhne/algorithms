@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const pq = require('../lib/priority_queue_max');
+const pq = require('../lib/priority-queue-max');
 
 describe('heapMaximum()', () => {
   it('returns the maximum element in the priority queue', () => {

@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const sort = require('../lib/sort_shell');
+const sort = require('../lib/sort-shell');
 
 describe('sort()', () => {
   it('sorts the given array using shell sort', () => {

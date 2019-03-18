@@ -2,7 +2,7 @@
 
 const _ = require('lodash');
 const assert = require('assert');
-const { HashTable, MAX_CAPACITY } = require('../lib/hash_table');
+const { HashTable, MAX_CAPACITY } = require('../lib/hash-table');
 
 describe('HashTable', () => {
   describe('constructor()', () => {

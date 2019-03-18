@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const dll = require('../lib/doubly_linked_list');
+const dll = require('../lib/doubly-linked-list');
 
 describe('doubly linked list', () => {
   let list;

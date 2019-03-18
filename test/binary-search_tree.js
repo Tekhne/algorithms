@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const { BinarySearchTree, Node } = require('../lib/binary_search_tree');
+const { BinarySearchTree, Node } = require('../lib/binary-search-tree');
 
 describe('BinarySearchTree', () => {
   let tree;

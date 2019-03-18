@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const sort = require('../lib/sort_insertion');
+const sort = require('../lib/sort-insertion');
 
 describe('sort()', () => {
   it('sorts the given array using insertion sort', () => {

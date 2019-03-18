@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const dat = require('../lib/direct_address_table');
+const dat = require('../lib/direct-address-table');
 
 describe('direct address table', () => {
   let object1;

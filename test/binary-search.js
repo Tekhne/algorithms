@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('assert');
-const bs = require('../lib/binary_search');
+const bs = require('../lib/binary-search');
 
 describe('binary search', () => {
   describe('search()', () => {
