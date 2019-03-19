@@ -42,7 +42,7 @@ describe('LinkedList', function() {
       list = new LinkedList(node1);
     });
 
-    it('can insert a node at the head', function() {
+    it('can insert a node before the head', function() {
       list.insert(node4, 1);
       assert.equal(list.length(), 4);
       assert.equal(list.head, node4);
@@ -53,7 +53,7 @@ describe('LinkedList', function() {
       assert.equal(list.head.next, node4);
     });
 
-    it('can insert a node at the tail', function() {
+    it('can insert a node after the tail', function() {
       list.insert(node4, list.length() + 1);
       assert.equal(list.head.next.next.next, node4);
     });
